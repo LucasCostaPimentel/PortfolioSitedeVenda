@@ -1,0 +1,131 @@
+/* Formatação da barra  de navegação */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(223, 11, 11, 0.829);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Formatação dos botoes da barra de navegação*/
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*`Posição do menu suspenso*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Formatação do botao de menu suspenso */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;/*ajuda na centralização em telas menores*/
+}
+
+/*Formatação do menu suspenso quando posicionar o cursor em cima*/
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  border: solid 1px black;
+  color: red;
+}
+
+/* formatação do menu suspenso quando o cursor posicionar em cima e sua sombra*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: red;/*quando o cursor ficar em cima a letra ficará vermelha*/
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px red;
+  z-index: 1;
+}
+
+/* formatação do menu suspenso */
+.dropdown-content a {
+  float: none;
+  background-color: red;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Formatação dos links do menu suspenso*/
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+/* block define que largura e altura estarão fixados no mesmo tamanho */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*largura do banner*/
+.banner{
+  width: 100%;
+}
+/*centralização de texto*/
+.referencia {
+  text-align: center;
+}
+/*cards*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  width: 100%;
+}
+
+.price {
+  color: green;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+  margin-left: 13%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
