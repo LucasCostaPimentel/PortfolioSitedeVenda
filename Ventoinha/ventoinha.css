@@ -86,3 +86,7 @@ body {
       border: solid 1px black;
       box-shadow: -2px 2px 8px 2px rgb(29, 29, 29);
   }
+/*Cor da letra*/
+  .preco{
+    color: green;
+  }
